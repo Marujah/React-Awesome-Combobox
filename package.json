@@ -1,0 +1,46 @@
+{
+  "name": "react-combobox",
+  "version": "0.1.0",
+  "description": "A combobox for React",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel lib -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marujah/React-Combobox.git"
+  },
+  "keywords": [
+    "React",
+    "Combobox",
+    "autocomplete",
+    "select"
+  ],
+  "author": "Marouen Mhiri <mail@marouen-mhiri.com> (http://marouen-mhiri.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marujah/React-Combobox/issues"
+  },
+  "homepage": "https://github.com/Marujah/React-Combobox#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.9.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-watch": "^4.0.2",
+    "polished": "^2.3.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.1"
+  }
+}
