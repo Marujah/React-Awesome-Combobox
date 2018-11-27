@@ -1,6 +1,6 @@
 {
   "name": "react-awesome-combobox",
-  "version": "2.0.0",
+  "version": "0.1.0",
   "description": "A combobox for React",
   "main": "build/index.js",
   "scripts": {
