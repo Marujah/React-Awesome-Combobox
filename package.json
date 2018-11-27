@@ -31,7 +31,7 @@
   "homepage": "https://github.com/Marujah/React-Combobox#readme",
   "jest": {
     "moduleNameMapper": {
-      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
+      "\\.(css)$": "<rootDir>/__mocks__/StyleMock.js"
     }
   },
   "devDependencies": {
