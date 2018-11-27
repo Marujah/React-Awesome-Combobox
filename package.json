@@ -1,6 +1,6 @@
 {
-  "name": "react-combobox",
-  "version": "0.1.0",
+  "name": "react-awesome-combobox",
+  "version": "1.0.0",
   "description": "A combobox for React",
   "main": "build/index.js",
   "scripts": {
@@ -10,8 +10,7 @@
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
-    "lint:watch": "esw -w lib/**",
-    "prepublish": "npm run build"
+    "lint:watch": "esw -w lib/**"
   },
   "repository": {
     "type": "git",
