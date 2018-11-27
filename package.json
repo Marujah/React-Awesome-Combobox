@@ -1,6 +1,6 @@
 {
   "name": "react-awesome-combobox",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A combobox for React",
   "main": "build/index.js",
   "scripts": {
@@ -29,6 +29,11 @@
     "url": "https://github.com/Marujah/React-Combobox/issues"
   },
   "homepage": "https://github.com/Marujah/React-Combobox#readme",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "identity-obj-proxy"
+    }
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -47,6 +52,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "eslint-watch": "^4.0.2",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "polished": "^2.3.0",
     "prop-types": "^15.6.2",
