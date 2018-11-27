@@ -1,0 +1,30 @@
+.combobox-container {
+    position: relative;
+    width: 100%;
+}
+
+
+.combobox-container *,
+.combobox-container *:before,
+.combobox-container *:after {
+    box-sizing: border-box;
+}
+
+.combobox-input {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.combobox-suggestion-container {
+    position: absolute;
+    border: 1px solid #D4D4D4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}

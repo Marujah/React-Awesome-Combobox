@@ -1,4 +1,4 @@
 .babelrc
 lib
 CODE_OF_CONDUCT.md
-./lib/__test__
+./build/__test__
