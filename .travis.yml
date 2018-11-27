@@ -4,5 +4,6 @@ node_js:
 install:
   - npm install
 script:
+  - rm -rf build
   - npm test
   - npm run build
