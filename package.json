@@ -31,7 +31,7 @@
   "homepage": "https://github.com/Marujah/React-Combobox#readme",
   "jest": {
     "moduleNameMapper": {
-      "\\.(css)$": "identity-obj-proxy"
+      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
   "devDependencies": {
@@ -52,7 +52,6 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "eslint-watch": "^4.0.2",
-    "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "polished": "^2.3.0",
     "prop-types": "^15.6.2",
