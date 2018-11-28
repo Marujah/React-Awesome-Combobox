@@ -27,8 +27,8 @@ npm install --save-dev react-awesome-combobox
             data={data}
             filterProperty='autos/name'
             display={{
-            seperator: ',',
-            fields: ['name', 'age', 'autos/name']
+                seperator: ',',
+                fields: ['name', 'age', 'autos/name']
             }}
             highlight
             itemHeight={40}
@@ -37,3 +37,17 @@ npm install --save-dev react-awesome-combobox
         />
     );
 ```
+
+## Props
+
+| Prop | Type | Required | Description |
+| :--- | :--- | :---: | :--- |
+| [`data`](#suggestions-prop) | Array | ✓ | These are the suggestions that will be displayed. Items can take an arbitrary shape. |
+| [`plaeholder`](#on-suggestions-fetch-requested-prop) | String | | will display the placeholder of the input field. |
+| [`bgColor`](#on-suggestions-clear-requested-prop) | String | | When set it will style the background color of the suggestions when moved using keyboard arrows. Default is "`#6B9FCE`". |
+| [`filterProperty`](#get-suggestion-value-prop) | String | ✓[*](#on-suggestions-clear-requested-prop-note) | When Implement it to teach Autosuggest what should be the input value when suggestion is clicked. |
+| [`display`](#render-suggestion-prop) | Object | | Gives the possibility to customize the suggestions. If your data is an array of objects and you filter for a specific property but want to display others. With this property it is possible (See `Example here`) |
+| [`highlight`](#input-props-prop) | Boolean | | highlights the occurences in the suggestions using the mark tag. |
+| [`itemHeight`](#on-suggestion-selected-prop) | Number | | specifies the items height of the suggestions dropdown. |
+| [`visibleItems`](#on-suggestion-highlighted-prop) | Number | | sets the limit of the suggestions to see and make the dropdown scrollable. |
+| [`onSelectItem`](#should-render-suggestions-prop) | Function | | A Callback function that will be triggered after selecting a suggestion. This function has as parameter the selected object.
