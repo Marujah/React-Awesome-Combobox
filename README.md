@@ -28,7 +28,7 @@ return (
         filterProperty='car/carMake'
         display={{
             seperator: ',',
-            fields: ['name', 'age', 'car/carMake']
+            fields: ['name', 'age', 'car/carMake', 'car/year']
         }}
         highlight
         itemHeight={40}
