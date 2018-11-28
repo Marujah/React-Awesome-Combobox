@@ -5,7 +5,7 @@ React-Combobox is a React library for building autocomplete searchbox in an easy
 ## Installation
 
 ``` bash
-npm install --save-dev react-awesome-combobox
+npm install --save react-awesome-combobox
 ```
 
 ## Usage
