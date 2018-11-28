@@ -1,5 +1,5 @@
 .babelrc
-lib
+src
 CODE_OF_CONDUCT.md
 ./build/__test__
-./__mocks__
+__mocks__
