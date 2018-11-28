@@ -13,6 +13,10 @@ React-Combobox is a React library for building autocomplete searchbox in an easy
 npm install --save react-awesome-combobox
 ```
 
+## Preview
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/react-awesome-combobox-2.png" width="300px" alt="racombobox">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/react-awesome-combobox-1.png" width="300px" alt="racombobox">
+
 ## Usage
 ``` jsx
 import { Combobox } from 'react-awesome-combobox';
