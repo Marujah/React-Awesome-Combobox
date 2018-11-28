@@ -1,6 +1,6 @@
 # [React-Combobox](https://npmjs.org/react-combobox) &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) [![npm version](https://img.shields.io/npm/v/react-awesome-combobox.svg?style=flat)](https://www.npmjs.com/package/react-awesome-combobox) [![Build Status](https://travis-ci.com/Marujah/React-Combobox.svg?branch=master)](https://travis-ci.com/Marujah/React-Combobox)
 
-React-Combobox is a React library for building autocomplete searchbox in an easy way.
+React-Combobox is a React library for building autocomplete searchbox in an easy and fully customizable way.
 
 ## Preview
 ![racbox](https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/react-awesome-combobox-2.png)
