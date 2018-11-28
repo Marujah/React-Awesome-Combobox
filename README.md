@@ -106,10 +106,10 @@ display = {{
 * **<a name="combobox-prop-itemHeight">itemHeight</a>**<br>
 [OPTIONAL] a number specifies the height of the suggestions boxes (this number will be used as pixel height) - default = 40
 
-* <a name="combobox-prop-visibleItems">visibleItems</a><br>
+* **<a name="combobox-prop-visibleItems">visibleItems</a>**<br>
 [OPTIONAL] a maximum number of suggestions to see. The rest will be reached when scrolled or by tapping UP/Down Keys. Default = 4
 
-* <a name="combobox-prop-onSelectItem">onSelectItem</a><br>
+* **<a name="combobox-prop-onSelectItem">onSelectItem</a>**<br>
 [OPTIONAL] a callback function which will be called after a selection of a suggestion took place. this function recieves a suggestion item as parameter. I.e. use onSelectItem={(sugg) => console.log(sugg)} to see the result.
 
 
