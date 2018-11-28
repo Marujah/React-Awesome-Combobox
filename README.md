@@ -78,21 +78,21 @@ return (
 | [`visibleItems`](#combobox-prop-visibleItems) | Number | | sets the limit of the suggestions to see and make the dropdown scrollable. |
 | [`onSelectItem`](#combobox-prop-onSelectItem) | Function | | A Callback function that will be triggered after selecting a suggestion. This function has as parameter the selected object.
 
-* <a name="combobox-prop-data">data</a><br/>
+* **<a name="combobox-prop-data">data</a>**<br/>
 [REQUIRED] the list of the suggestions to filter. This can be a simple array of i.e. strings, numbers, booleans... or an array of objects.
 This property is REQUIRED.
 
-* <a name="combobox-prop-placeholder">placeholder</a><br>
+* **<a name="combobox-prop-placeholder">placeholder</a>**<br>
 [OPTIONAL] the placeholder to show in the input field.
 
-* <a name="combobox-prop-bgcolor">bgColor</a><br>
+* **<a name="combobox-prop-bgcolor">bgColor</a>**<br>
 [OPTIONAL] the Background color of the suggestions when visited with keyboard up/down-arrows.
 
-* <a name="combobox-prop-filterProperty">filterProperty</a><br>
+* **<a name="combobox-prop-filterProperty">filterProperty</a>**<br>
 [OPTIONAL] the Property to search for in the list of the suggestions. This property works with the property `data` when it's an array of objects.<br/>
 filterProperty can contain '/'-sign to specify the property levels to search for.
 
-* <a name="combobox-prop-display">display</a><br>
+* **<a name="combobox-prop-display">display</a>**<br>
 [OPTIONAL] Object specifying which property of the searched object should appear in the search result and how they should be seperated.<br/>
 display property when used should have this shape:
 ```jsx
@@ -104,10 +104,10 @@ display = {{
 }}
 ```
 
-* <a name="combobox-prop-highlight">highlight</a><br>
+* **<a name="combobox-prop-highlight">highlight</a>**<br>
 [OPTIONAL] when true the found search string will be highlighted using the `<mark />`-html Tag
 
-* <a name="combobox-prop-itemHeight">itemHeight</a><br>
+* **<a name="combobox-prop-itemHeight">itemHeight</a>**<br>
 [OPTIONAL] a number specifies the height of the suggestions boxes (this number will be used as pixel height) - default = 40
 
 * <a name="combobox-prop-visibleItems">visibleItems</a><br>
