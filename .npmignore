@@ -2,3 +2,4 @@
 lib
 CODE_OF_CONDUCT.md
 ./build/__test__
+./__mocks__
