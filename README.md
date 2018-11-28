@@ -10,32 +10,32 @@ npm install --save-dev react-awesome-combobox
 
 ## Usage
 ``` jsx
-    import { Combobox } from 'react-awesome-combobox';
-    const data=[
-      {name: 'mike morales', age: 40, autos: {name: 'VW', EZ: '2015'}},
-      {name: 'Tania Bruce', age: 30, autos: {name: 'Audi', EZ: '2018'}},
-      {name: 'Adam Mhiri', age: 5, autos: {name: 'Mercedes', EZ: '2018'}},
-      {name: 'Hanna Miriam', age: 30, autos: {name: 'VW', EZ: '2018'}},
-      {name: 'Jasmin Gallas', age: 12, autos: {name: 'Skoda', EZ: '2018'}},
-      {name: 'Sofia Mhiri', age: 10, autos: {name: 'Seat', EZ: '2018'}},
-      {name: 'Sarah Moos', age: 20, autos: {name: 'Skoda', EZ: '2018'}},
-    ];
-    return (
-        <Combobox
-            placeholder='Placeholder'
-            bgColor='cadetBlue'
-            data={data}
-            filterProperty='autos/name'
-            display={{
-                seperator: ',',
-                fields: ['name', 'age', 'autos/name']
-            }}
-            highlight
-            itemHeight={40}
-            visibleItems={4}
-            onSelectItem={(sugg) => console.log(sugg)}
-        />
-    );
+import { Combobox } from 'react-awesome-combobox';
+const data=[
+    {name: 'marouen mhiri', age: 40, car: {carMake: 'VW', year: '2018'}},
+    {name: 'Tanja Bernhardt', age: 35, car: {carMake: 'Audi', year: '2017'}},
+    {name: 'Adam mhiri', age: 5, car: {carMake: 'Mercedes', year: '2018'}},
+    {name: 'Hanna Miriam Mhiri', age: 3, car: {carMake: 'VW', year: '2016'}},
+    {name: 'Jasmin Gallas', age: 12, car: {carMake: 'Skoda', year: '2018'}},
+    {name: 'Sofia M`hiri', age: 10, car: {carMake: 'Seat', year: '2015'}},
+    {name: 'Mehdi Olivier', age: 20, car: {carMake: 'Skoda', year: '2018'}},
+];
+return (
+    <Combobox
+        placeholder='Placeholder'
+        bgColor='cadetBlue'
+        data={data}
+        filterProperty='car/carMake'
+        display={{
+            seperator: ',',
+            fields: ['name', 'age', 'car/carMake']
+        }}
+        highlight
+        itemHeight={40}
+        visibleItems={4}
+        onSelectItem={(sugg) => console.log(sugg)}
+    />
+);
 ```
 
 ## Props
