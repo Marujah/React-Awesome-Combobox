@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/ComboboxSuggestion.css';
+import SearchUtil from '../util';
 
 export class ComboboxSuggestion extends React.Component {
     constructor(props) {
@@ -57,6 +58,9 @@ export class ComboboxSuggestion extends React.Component {
                                             {suggestion.after}{!isLastElement && display.seperator + ' '}
                                         </span>
                                     );
+                                } else if (item2Show.split('/').length > 1) {
+                                    const item2ShowValue = SearchUtil.getObjectPropertyValue(suggestion.item, item2Show);
+                                    return <span key={idx}>{item2ShowValue}{!isLastElement && display.seperator + ' '}</span>;
                                 }
                                 return <span key={idx}>{suggestion.item[item2Show]}{!isLastElement && display.seperator + ' '}</span>;
                             })
@@ -67,7 +71,7 @@ export class ComboboxSuggestion extends React.Component {
                     }
                 </span>
             </div>
-        )
+        );
     }
 }
 

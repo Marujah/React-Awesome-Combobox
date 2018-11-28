@@ -12,13 +12,13 @@ npm install --save react-awesome-combobox
 ``` jsx
 import { Combobox } from 'react-awesome-combobox';
 const data=[
-    {name: 'marouen mhiri', age: 40, car: {carMake: 'VW', year: '2018'}},
+    {name: 'Marouen Mhiri', age: 40, car: {carMake: 'VW', year: '2018'}},
     {name: 'Tanja Bernhardt', age: 35, car: {carMake: 'Audi', year: '2017'}},
-    {name: 'Adam mhiri', age: 5, car: {carMake: 'Mercedes', year: '2018'}},
+    {name: 'Adam Mhiri', age: 5, car: {carMake: 'Mercedes', year: '2018'}},
     {name: 'Hanna Miriam Mhiri', age: 3, car: {carMake: 'VW', year: '2016'}},
     {name: 'Jasmin Gallas', age: 12, car: {carMake: 'Skoda', year: '2018'}},
     {name: 'Sofia M`hiri', age: 10, car: {carMake: 'Seat', year: '2015'}},
-    {name: 'Mehdi Olivier', age: 20, car: {carMake: 'Skoda', year: '2018'}},
+    {name: 'Sofiene Attia', age: 20, car: {carMake: 'Skoda', year: '2018'}},
 ];
 return (
     <Combobox
@@ -37,6 +37,24 @@ return (
     />
 );
 ```
+
+or (with a simple array of strings)
+
+``` jsx
+import { Combobox } from 'react-awesome-combobox';
+const names = ['John', 'Marouen', 'Tanja', 'Hanna', 'Sofia', 'Adam', 'Rafif'];
+return (
+    <Combobox
+        placeholder='Search for name...'
+        bgColor='green'
+        data={names}
+        itemHeight={50}
+        visibleItems={3}
+        onSelectItem={(sugg) => console.log(sugg)}/>
+    </div>
+);
+```
+
 
 ## Props
 

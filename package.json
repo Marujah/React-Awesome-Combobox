@@ -8,9 +8,9 @@
     "test:watch": "jest --watchAll --verbose",
     "test:coverage": "jest --verbose --coverage",
     "build": "webpack --mode production",
-    "build:watch": "babel lib -w -d build",
-    "lint": "eslint lib/**; exit 0",
-    "lint:watch": "esw -w lib/**",
+    "build:watch": "babel src -w -d build",
+    "lint": "eslint src/**/*.js; exit 0",
+    "lint:watch": "esw -w src/**/*.js",
     "dev": "webpack --mode development"
   },
   "repository": {

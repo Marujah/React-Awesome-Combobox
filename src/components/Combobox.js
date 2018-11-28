@@ -75,6 +75,9 @@ export default class Combobox extends React.Component {
                     (display.fields.map((item2Show) => {
                         if (item2Show === filterProperty) {
                             return selectedSuggestion.selectedInput;
+                        } else if (item2Show.split('/').length > 1) {
+                            const item2ShowValue = SearchUtil.getObjectPropertyValue(selectedSuggestion.item, item2Show);
+                            return item2ShowValue;
                         }
                         return selectedSuggestion.item[item2Show] ;
                     }))
