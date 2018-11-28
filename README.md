@@ -2,6 +2,11 @@
 
 React-Combobox is a React library for building autocomplete searchbox in an easy way.
 
+## Preview
+![racbox](https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/react-awesome-combobox-2.png)
+
+![racbox](https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/react-awesome-combobox-1.png)
+
 ## Installation
 
 ``` bash
@@ -60,12 +65,54 @@ return (
 
 | Prop | Type | Required | Description |
 | :--- | :--- | :---: | :--- |
-| [`data`](#suggestions-prop) | Array | ✓ | These are the suggestions that will be displayed. Items can take an arbitrary shape. |
-| [`plaeholder`](#on-suggestions-fetch-requested-prop) | String | | will display the placeholder of the input field. |
-| [`bgColor`](#on-suggestions-clear-requested-prop) | String | | When set it will style the background color of the suggestions when moved using keyboard arrows. Default is "`#6B9FCE`". |
-| [`filterProperty`](#get-suggestion-value-prop) | String | ✓[*](#on-suggestions-clear-requested-prop-note) | When Implement it to teach Autosuggest what should be the input value when suggestion is clicked. |
-| [`display`](#render-suggestion-prop) | Object | | Gives the possibility to customize the suggestions. If your data is an array of objects and you filter for a specific property but want to display others. With this property it is possible (See `Example here`) |
-| [`highlight`](#input-props-prop) | Boolean | | highlights the occurences in the suggestions using the mark tag. |
-| [`itemHeight`](#on-suggestion-selected-prop) | Number | | specifies the items height of the suggestions dropdown. |
-| [`visibleItems`](#on-suggestion-highlighted-prop) | Number | | sets the limit of the suggestions to see and make the dropdown scrollable. |
-| [`onSelectItem`](#should-render-suggestions-prop) | Function | | A Callback function that will be triggered after selecting a suggestion. This function has as parameter the selected object.
+| [`data`](#combobox-prop-data) | Array | ✓ | These are the suggestions that will be displayed. Items can take an arbitrary shape. |
+| [`plaeholder`](#combobox-prop-placeholder) | String | | will display the placeholder of the input field. |
+| [`bgColor`](#combobox-prop-bgcolor) | String | | When set it will style the background color of the suggestions when moved using keyboard arrows. Default is "`#6B9FCE`". |
+| [`filterProperty`](#combobox-prop-filterProperty) | String | ✓[*](#on-suggestions-clear-requested-prop-note) | When Implement it to teach Autosuggest what should be the input value when suggestion is clicked. |
+| [`display`](#combobox-prop-display) | Object | | Gives the possibility to customize the suggestions. If your data is an array of objects and you filter for a specific property but want to display others. With this property it is possible (See `Example here`) |
+| [`highlight`](#combobox-prop-highlight) | Boolean | | highlights the occurences in the suggestions using the mark tag. |
+| [`itemHeight`](#combobox-prop-itemHeight) | Number | | specifies the items height of the suggestions dropdown. |
+| [`visibleItems`](#combobox-prop-visibleItems) | Number | | sets the limit of the suggestions to see and make the dropdown scrollable. |
+| [`onSelectItem`](#combobox-prop-onSelectItem) | Function | | A Callback function that will be triggered after selecting a suggestion. This function has as parameter the selected object.
+
+* <a name="combobox-prop-data">data</a><br/>
+[REQUIRED] the list of the suggestions to filter. This can be a simple array of i.e. strings, numbers, booleans... or an array of objects.
+This property is REQUIRED.
+
+* <a name="combobox-prop-placeholder">placeholder</a><br>
+[OPTIONAL] the placeholder to show in the input field.
+
+* <a name="combobox-prop-bgcolor">bgColor</a><br>
+[OPTIONAL] the Background color of the suggestions when visited with keyboard up/down-arrows.
+
+* <a name="combobox-prop-filterProperty">filterProperty</a><br>
+[OPTIONAL] the Property to search for in the list of the suggestions. This property works with the property `data` when it's an array of objects.<br/>
+filterProperty can contain '/'-sign to specify the property levels to search for.
+
+* <a name="combobox-prop-display">display</a><br>
+[OPTIONAL] Object specifying which property of the searched object should appear in the search result and how they should be seperated.<br/>
+display property when used should have this shape:
+```jsx
+display = {{
+    // or any other sign '|', ':', ' '...
+    seperator: ',', 
+    // Array of existing object properties
+    fields: ['name', 'car/year'] 
+}}
+```
+
+* <a name="combobox-prop-highlight">highlight</a><br>
+[OPTIONAL] when true the found search string will be highlighted using the `<mark />`-html Tag
+
+* <a name="combobox-prop-itemHeight">itemHeight</a><br>
+[OPTIONAL] a number specifies the height of the suggestions boxes (this number will be used as pixel height) - default = 40
+
+* <a name="combobox-prop-visibleItems">visibleItems</a><br>
+[OPTIONAL] a maximum number of suggestions to see. The rest will be reached when scrolled or by tapping UP/Down Keys. Default = 4
+
+* <a name="combobox-prop-onSelectItem">onSelectItem</a><br>
+[OPTIONAL] a callback function which will be called after a selection of a suggestion took place. this function recieves a suggestion item as parameter. I.e. use onSelectItem={(sugg) => console.log(sugg)} to see the result.
+
+
+
+
