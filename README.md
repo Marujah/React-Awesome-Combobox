@@ -70,27 +70,27 @@ return (
 | [`plaeholder`](#combobox-prop-placeholder) | String | | will display the placeholder of the input field. |
 | [`bgColor`](#combobox-prop-bgcolor) | String | | When set it will style the background color of the suggestions when moved using keyboard arrows. Default is "`#6B9FCE`". |
 | [`filterProperty`](#combobox-prop-filterProperty) | String | ✓[*](#combobox-prop-filterProperty) | When Implement it to teach Autosuggest what should be the input value when suggestion is clicked. |
-| [`display`](#combobox-prop-display) | Object | | Gives the possibility to customize the suggestions. If your data is an array of objects and you filter for a specific property but want to display others. With this property it is possible (See [`Example here`]((#combobox-prop-display))) |
+| [`display`](#combobox-prop-display) | Object | | Gives the possibility to customize the suggestions. If your data is an array of objects and you filter for a specific property but want to display others. With this property it is possible (See [`Example here`](#combobox-prop-display)) |
 | [`highlight`](#combobox-prop-highlight) | Boolean | | highlights the occurences in the suggestions using the mark tag. |
 | [`itemHeight`](#combobox-prop-itemHeight) | Number | | specifies the items height of the suggestions dropdown. |
 | [`visibleItems`](#combobox-prop-visibleItems) | Number | | sets the limit of the suggestions to see and make the dropdown scrollable. |
 | [`onSelectItem`](#combobox-prop-onSelectItem) | Function | | A Callback function that will be triggered after selecting a suggestion. This function has as parameter the selected object.
 
-* <a name="combobox-prop-data">data</a><br/>
+**<a name="combobox-prop-data">data</a>**<br/>
 [REQUIRED] the list of the suggestions to filter. This can be a simple array of i.e. strings, numbers, booleans... or an array of objects.
 This property is REQUIRED.
 
-* <a name="combobox-prop-placeholder">placeholder</a><br>
+**<a name="combobox-prop-placeholder">placeholder</a>**<br>
 [OPTIONAL] the placeholder to show in the input field.
 
-* <a name="combobox-prop-bgcolor">bgColor</a><br>
+**<a name="combobox-prop-bgcolor">bgColor</a>**<br>
 [OPTIONAL] the Background color of the suggestions when visited with keyboard up/down-arrows.
 
-* <a name="combobox-prop-filterProperty">filterProperty</a><br>
+**<a name="combobox-prop-filterProperty">filterProperty</a>**<br>
 [OPTIONAL] the Property to search for in the list of the suggestions. This property works with the property `data` when it's an array of objects.<br/>
 filterProperty can contain '/'-sign to specify the property levels to search for.
 
-* <a name="combobox-prop-display">display</a><br>
+**<a name="combobox-prop-display">display</a>**<br>
 [OPTIONAL] Object specifying which property of the searched object should appear in the search result and how they should be seperated.<br/>
 display property when used should have this shape:
 ```jsx
@@ -102,16 +102,16 @@ display = {{
 }}
 ```
 
-* <a name="combobox-prop-highlight">highlight</a><br>
+**<a name="combobox-prop-highlight">highlight</a>**<br>
 [OPTIONAL] when true the found search string will be highlighted using the `<mark />`-html Tag
 
-* <a name="combobox-prop-itemHeight">itemHeight</a><br>
+**<a name="combobox-prop-itemHeight">itemHeight</a>**<br>
 [OPTIONAL] a number specifies the height of the suggestions boxes (this number will be used as pixel height) - default = 40
 
-* <a name="combobox-prop-visibleItems">visibleItems</a><br>
+**<a name="combobox-prop-visibleItems">visibleItems</a>**<br>
 [OPTIONAL] a maximum number of suggestions to see. The rest will be reached when scrolled or by tapping UP/Down Keys. Default = 4
 
-* <a name="combobox-prop-onSelectItem">onSelectItem</a><br>
+**<a name="combobox-prop-onSelectItem">onSelectItem</a>**<br>
 [OPTIONAL] a callback function which will be called after a selection of a suggestion took place. this function recieves a suggestion item as parameter. I.e. use onSelectItem={(sugg) => console.log(sugg)} to see the result.
 
 ### License
