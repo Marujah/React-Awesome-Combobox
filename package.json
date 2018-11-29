@@ -1,6 +1,6 @@
 {
   "name": "react-awesome-combobox",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A combobox for React",
   "main": "build/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marujah/React-Combobox.git"
+    "url": "git+https://github.com/Marujah/React-Awesome-Combobox.git"
   },
   "keywords": [
     "React",
@@ -26,9 +26,9 @@
   "author": "Marouen Mhiri <mail@marouen-mhiri.com> (http://marouen-mhiri.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Marujah/React-Combobox/issues"
+    "url": "https://github.com/Marujah/React-Awesome-Combobox/issues"
   },
-  "homepage": "https://github.com/Marujah/React-Combobox#readme",
+  "homepage": "https://github.com/Marujah/React-Awesome-Combobox#readme",
   "jest": {
     "moduleNameMapper": {
       "\\.(css)$": "<rootDir>/__mocks__/StyleMock.js"
