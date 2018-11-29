@@ -70,7 +70,7 @@ return (
 | [`plaeholder`](#combobox-prop-placeholder) | String | | will display the placeholder of the input field. |
 | [`bgColor`](#combobox-prop-bgcolor) | String | | When set it will style the background color of the suggestions when moved using keyboard arrows. Default is "`#6B9FCE`". |
 | [`filterProperty`](#combobox-prop-filterProperty) | String | ✓[*](#combobox-prop-filterProperty) | When Implement it to teach Autosuggest what should be the input value when suggestion is clicked. |
-| [`display`](#combobox-prop-display) | Object | | Gives the possibility to customize the suggestions. If your data is an array of objects and you filter for a specific property but want to display others. With this property it is possible (See [`Example here`]((#combobox-prop-display))) |
+| [`display`](#combobox-prop-display) | Object | | Gives the possibility to customize the suggestions. If your data is an array of objects and you filter for a specific property but want to display others. With this property it is possible (See [`Example here`](#combobox-prop-display)) |
 | [`highlight`](#combobox-prop-highlight) | Boolean | | highlights the occurences in the suggestions using the mark tag. |
 | [`itemHeight`](#combobox-prop-itemHeight) | Number | | specifies the items height of the suggestions dropdown. |
 | [`visibleItems`](#combobox-prop-visibleItems) | Number | | sets the limit of the suggestions to see and make the dropdown scrollable. |
