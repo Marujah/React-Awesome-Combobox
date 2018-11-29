@@ -1,6 +1,6 @@
 {
   "name": "react-awesome-combobox",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A combobox for React",
   "main": "build/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "select"
   ],
   "author": "Marouen Mhiri <mail@marouen-mhiri.com> (http://marouen-mhiri.com)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Marujah/React-Combobox/issues"
   },
